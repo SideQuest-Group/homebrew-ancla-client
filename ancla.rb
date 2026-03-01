@@ -5,21 +5,21 @@
 class Ancla < Formula
   desc "CLI client for the Ancla deployment platform"
   homepage "https://ancla.dev"
-  version "1.1.1"
+  version "1.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SideQuest-Group/ancla-client/releases/download/v1.1.1/ancla_1.1.1_darwin_amd64.tar.gz"
-      sha256 "e800596a8c6dbee81c40fb1480912abe3e790afef896c20dd9d6dc909cbb2fcb"
+      url "https://github.com/SideQuest-Group/ancla-client/releases/download/v1.2.0/ancla_1.2.0_darwin_amd64.tar.gz"
+      sha256 "84e0216f2c49d4c6215f49d500940399cd90e5176b067602f566cf9efa05061c"
 
       define_method(:install) do
         bin.install "ancla"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SideQuest-Group/ancla-client/releases/download/v1.1.1/ancla_1.1.1_darwin_arm64.tar.gz"
-      sha256 "b0921b056f6457096f478d8b32cae0d71573687946736495635250f013aaba8f"
+      url "https://github.com/SideQuest-Group/ancla-client/releases/download/v1.2.0/ancla_1.2.0_darwin_arm64.tar.gz"
+      sha256 "a6b0e7cad59796de718980a64843d02b28cbc04e8a12651ce3ad7203db71d816"
 
       define_method(:install) do
         bin.install "ancla"
@@ -29,15 +29,15 @@ class Ancla < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SideQuest-Group/ancla-client/releases/download/v1.1.1/ancla_1.1.1_linux_amd64.tar.gz"
-      sha256 "748963ed22c163d9b3e3e6e026466d8c5c5b72a2b2f334a04d61666dbe3263a1"
+      url "https://github.com/SideQuest-Group/ancla-client/releases/download/v1.2.0/ancla_1.2.0_linux_amd64.tar.gz"
+      sha256 "d35cdfb31298c431347985dde7ace4dec6685b425d3add564b7d86db19421d62"
       define_method(:install) do
         bin.install "ancla"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SideQuest-Group/ancla-client/releases/download/v1.1.1/ancla_1.1.1_linux_arm64.tar.gz"
-      sha256 "e5f33dd2a057468df909c518a65c29c8d1f2ee5467534500fa75d5d2a328f5a2"
+      url "https://github.com/SideQuest-Group/ancla-client/releases/download/v1.2.0/ancla_1.2.0_linux_arm64.tar.gz"
+      sha256 "6217073a8d98388797d777a0dd90b96fea2376a9b9173c76061685f6b20a43d2"
       define_method(:install) do
         bin.install "ancla"
       end
